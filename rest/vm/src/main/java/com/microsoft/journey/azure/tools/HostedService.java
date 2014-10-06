@@ -1,13 +1,11 @@
 package com.microsoft.journey.azure.tools;
 
-import restcore.AzureRestPost;
-import restcore.Response;
-import restcore.RestAzure;
-import jaxbpj.CreateHostedService;
-
+import com.microsoft.journey.azure.exception.RestAzureException;
+import com.microsoft.journey.azure.jaxbpj.CreateHostedService;
+import com.microsoft.journey.azure.restcore.AzureRestPost;
+import com.microsoft.journey.azure.restcore.Response;
+import com.microsoft.journey.azure.restcore.RestAzure;
 import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
-
-import exception.RestAzureException;
 
 public final class HostedService implements AzureRestPost {
 

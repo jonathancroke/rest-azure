@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import restcore.AzureRestGet;
-import restcore.Response;
-import restcore.RestAzure;
-import exception.RestAzureException;
+import com.microsoft.journey.azure.exception.RestAzureException;
+import com.microsoft.journey.azure.restcore.AzureRestGet;
+import com.microsoft.journey.azure.restcore.Response;
+import com.microsoft.journey.azure.restcore.RestAzure;
 
 public final class Locations implements AzureRestGet {
 

@@ -1,4 +1,4 @@
-package restcore;
+package com.microsoft.journey.azure.restcore;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -15,8 +15,8 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import sec.AzureSecurity;
-import exception.RestAzureException;
+import com.microsoft.journey.azure.exception.RestAzureException;
+import com.microsoft.journey.azure.sec.AzureSecurity;
 
 public class RestAzure {
 

@@ -1,6 +1,6 @@
-package restcore;
+package com.microsoft.journey.azure.restcore;
 
-import exception.RestAzureException;
+import com.microsoft.journey.azure.exception.RestAzureException;
 
 public interface AzureRestPost {
 	public Response create() throws RestAzureException;

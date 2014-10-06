@@ -1,4 +1,4 @@
-package sec;
+package com.microsoft.journey.azure.sec;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 
-import exception.RestAzureException;
+import com.microsoft.journey.azure.exception.RestAzureException;
 
 public class AzureSecurity {
 

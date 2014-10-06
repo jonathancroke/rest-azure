@@ -1,27 +1,26 @@
-package jaxbpj;
+package com.microsoft.journey.azure.jaxbpj;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-@XmlRootElement(name = "CreateHostedService")
-@XmlType(propOrder = {"serviceName", "label", "description", "location", "affinity"})
-public class CreateHostedService {
+@XmlRootElement(name = "CreateAffinityGroup")
+@XmlType(propOrder = {"name", "label", "description", "location"})
+public class CreateAffinityGroup {
 
-	private String serviceName;
+	private String name;
 	private String label;
 	private String description;
 	private String location;
-	private String affinity;
 
 
-	@XmlElement(name = "ServiceName", required = true)
-	public void setServiceName(String serviceName) {
-		this.serviceName = serviceName;
+	@XmlElement(name = "Name", required = true)
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getServiceName() {
-		return serviceName;
+	public String getName() {
+		return name;
 	}
 
 	@XmlElement(name = "Label", required = true)
@@ -44,11 +43,6 @@ public class CreateHostedService {
 
 	@XmlElement(name = "Location")
 	public void setLocation(String location) {
-		if (this.affinity != null) {
-			throw new ExceptionInInitializerError(
-					"Cannot set Location if Affinity group is already set.");
-
-		}
 		this.location = location;
 	}
 
@@ -56,28 +50,13 @@ public class CreateHostedService {
 		return location;
 	}
 
-	public String getAffinity() {
-
-		return affinity;
-	}
-
-	@XmlElement(name = "Affinity")
-	public void setAffinity(String affinity) {
-		if (this.location != null) {
-			throw new ExceptionInInitializerError(
-					"Cannot set Affinity group if Location is already set.");
-		}
-		this.affinity = affinity;
-	}
-	
 	@Override
     public String toString() {
         return "CreateHostedService{" +
-                "ServiceName='" + serviceName + '\'' +
+                "Name='" + name + '\'' +
                 ", Label='" + label + '\'' +
                 ", Description='" + description + '\'' +
                 ", Location='" + location + '\'' +
-                ", Affinity='" + affinity + '\'' +
                 '}';
     }
 

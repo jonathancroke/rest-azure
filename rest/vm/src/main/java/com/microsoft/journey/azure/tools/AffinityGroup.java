@@ -1,11 +1,11 @@
 package com.microsoft.journey.azure.tools;
 
-import jaxbpj.CreateAffinityGroup;
-import restcore.AzureRestPost;
-import restcore.Response;
-import restcore.RestAzure;
+import com.microsoft.journey.azure.exception.RestAzureException;
+import com.microsoft.journey.azure.jaxbpj.CreateAffinityGroup;
+import com.microsoft.journey.azure.restcore.AzureRestPost;
+import com.microsoft.journey.azure.restcore.Response;
+import com.microsoft.journey.azure.restcore.RestAzure;
 import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
-import exception.RestAzureException;
 
 public final class AffinityGroup implements AzureRestPost {
 

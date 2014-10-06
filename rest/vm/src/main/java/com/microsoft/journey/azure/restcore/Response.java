@@ -1,4 +1,4 @@
-package restcore;
+package com.microsoft.journey.azure.restcore;
 
 public class Response {
 	private int responseCode;

@@ -1,8 +1,8 @@
 package com.microsoft.journey.azure.tools;
 
-import restcore.Response;
-import restcore.RestAzure;
-import exception.RestAzureException;
+import com.microsoft.journey.azure.exception.RestAzureException;
+import com.microsoft.journey.azure.restcore.Response;
+import com.microsoft.journey.azure.restcore.RestAzure;
 
 public class Main {
 
@@ -36,15 +36,15 @@ public class Main {
 //		System.out.println("cloudService delete response content: " + response.getResponse());
 		
 		
-		AffinityGroup affinityGroup = new AffinityGroup(restAzure, "jonAffGrp1", "jonAffGrp1label123",
-				"My Affinity Deiption", "East US");
-		affinityGroup.create();
-		System.out.println("\naffinityGroup response code: " + response.getResponseCode());
-		System.out.println("affinityGroup response content: " + response.getResponse());
-		
-		response = affinityGroup.delete();
-		System.out.println("\naffinityGroup delete response code: " + response.getResponseCode());
-		System.out.println("affinityGroup delete response content: " + response.getResponse());
+//		AffinityGroup affinityGroup = new AffinityGroup(restAzure, "jonAffGrp1", "jonAffGrp1label123",
+//				"My Affinity Deiption", "East US");
+//		affinityGroup.create();
+//		System.out.println("\naffinityGroup response code: " + response.getResponseCode());
+//		System.out.println("affinityGroup response content: " + response.getResponse());
+//		
+//		response = affinityGroup.delete();
+//		System.out.println("\naffinityGroup delete response code: " + response.getResponseCode());
+//		System.out.println("affinityGroup delete response content: " + response.getResponse());
 	}
 
 }

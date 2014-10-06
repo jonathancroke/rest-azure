@@ -1,4 +1,4 @@
-package exception;
+package com.microsoft.journey.azure.exception;
 
 public class RestAzureException extends Exception {
 	private static final long serialVersionUID = 2185937598533942899L;
